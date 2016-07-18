@@ -1,8 +1,8 @@
 var redis = require("redis");
-module.exports = function(options, callback) {
+module.exports = function(options) {
    options = options || {host: "127.0.0.1", port: 6379};
    var defaultPool = "commons";
-   var client = redis.createClient(options, callback);
+   var client = redis.createClient(options);
 
    function close() {
       client.quit();

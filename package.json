@@ -1,6 +1,6 @@
 {
   "name": "distributed-cache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Distributed cache based on Redis",
   "main": "index.js",
   "scripts": {
