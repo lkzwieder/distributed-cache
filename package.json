@@ -1,14 +1,14 @@
 {
-  "name": "redis-cache",
+  "name": "distributed-cache",
   "version": "0.0.1",
   "description": "Distributed cache based on Redis",
   "main": "index.js",
   "scripts": {
-    "test": "node ."
+    "test": "node ./test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lkzwieder/redis-cache.git"
+    "url": "git+https://github.com/lkzwieder/distributed-cache.git"
   },
   "keywords": [
     "cache",
@@ -20,9 +20,9 @@
   "author": "Lucas Tettamanti",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lkzwieder/redis-cache/issues"
+    "url": "https://github.com/lkzwieder/distributed-cache/issues"
   },
-  "homepage": "https://github.com/lkzwieder/redis-cache#readme",
+  "homepage": "https://github.com/lkzwieder/distributed-cache#readme",
   "dependencies": {
     "redis": "^2.6.2"
   }
