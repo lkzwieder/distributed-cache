@@ -8,7 +8,4 @@ cache.all('cities', function(e, v) {
    if(!e) console.log(v);
 });
 
-cache.flushAll();
-cache.all('cities', function(e, v) {
-   if(!e) console.log(v);
-});
+cache.getPools('*', console.log);

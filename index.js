@@ -42,6 +42,10 @@ module.exports = function(options) {
       client.flushall();
    }
 
+   function getPools(pattern, callback) {
+      client.keys(pattern, callback);
+   }
+
    return {
       close: close,
       get: hget,
@@ -49,6 +53,7 @@ module.exports = function(options) {
       set: hset,
       multiSet: hmset,
       all: hgetAll,
-      flushAll: flushAll
+      flushAll: flushAll,
+      getPools: getPools
    };
 };
