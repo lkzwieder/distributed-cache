@@ -38,12 +38,17 @@ module.exports = function(options) {
       client.hgetall(pool, callback);
    }
 
+   function flushAll() {
+      client.flushall();
+   }
+
    return {
       close: close,
       get: hget,
       multiGet: hmget,
       set: hset,
       multiSet: hmset,
-      all: hgetAll
+      all: hgetAll,
+      flushAll: flushAll
    };
 };
