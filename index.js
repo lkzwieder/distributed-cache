@@ -46,6 +46,11 @@ module.exports = function(options) {
       client.keys(pattern, callback);
    }
 
+   function hdel(pool, keys, callback) {
+      pool = pool || defaultPool;
+      client.hdel(pool, keys, callback);
+   }
+
    return {
       close: close,
       get: hget,
@@ -54,6 +59,7 @@ module.exports = function(options) {
       multiSet: hmset,
       all: hgetAll,
       flushAll: flushAll,
-      getPools: getPools
+      getPools: getPools,
+      del: hdel
    };
 };
